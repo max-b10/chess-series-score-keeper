@@ -9,13 +9,18 @@ const playerOneDisplay = document.querySelector("#playerOneDisplay");
 const playerTwoDisplay = document.querySelector("#playerTwoDisplay");
 
 // Score limit selector:
-// const scoreLimit = document.querySelector("#playTo");
+const scoreLimit = document.querySelector("#score-select");
 
 // Player score variables:
 let playerOneScore = 0;
 let playerTwoScore = 0;
-let winningScore = 5;
+let winningScore = 0;
 let isSeriesFinish = false;
+
+scoreLimit.addEventListener("change", function () {
+  winningScore = parseInt(this.value);
+  reset();
+});
 
 // Button click event handlers:
 buttonOne.addEventListener("click", (e) => {
@@ -45,10 +50,6 @@ buttonThree.addEventListener("click", (e) => {
   p1DTC();
   p2DTC();
 });
-buttonReset.addEventListener("click", (e) => {
-  playerOneScore = 0;
-  playerTwoScore = 0;
-  isSeriesFinish = false;
-  p1DTC();
-  p2DTC();
-});
+// reset is referencing 'reset' from the functions sheet.
+// importantly it's not called immediately as it needs to wait for the click event before I want the function to run.
+buttonReset.addEventListener("click", reset);
