@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ScoreKeeper</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-container">
+        <div class="image">
+          <img
+            id="main-image"
+            src="/images/chessImage2.jpg"
+            alt="fancy image of a chess game"
+          />
+        </div>
+        <div class="header">
+          <h3>CHESS SERIES SCORE KEEPER</h3>
+        </div>
+        <section class="content">
+          <div class="score-display">
+            <span id="playerOneDisplay">0</span>
+            <span id="to">to</span>
+            <span id="playerTwoDisplay">0</span>
+          </div>
+          <div class="score-limit">Score Limit:</div>
+        </section>
+        <section class="sub-content">
+          <div class="buttons-1">
+            <button class="button" id="button-1">+1 Player 1</button>
+            <button class="button" id="button-2">+1 Player 2</button>
+            <button class="button" id="button-3">+0.5 Draw</button>
+          </div>
+          <div class="buttons-reset">
+            <button class="button" id="button-reset">Reset</button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="/scripts/functions.js"></script>
+    <script src="/scripts/app.js"></script>
+  </body>
+</html>
