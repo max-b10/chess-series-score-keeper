@@ -15,34 +15,52 @@
   <body>
     <div class="container">
       <div class="card-container">
-        <div class="image">
-          <img
-            id="main-image"
-            src="/images/chessImage2.jpg"
-            alt="fancy image of a chess game"
-          />
-        </div>
-        <div class="header">
-          <h3>CHESS SERIES SCORE KEEPER</h3>
+        <div class="card-top-container">
+          <div class="header">
+            <h3>CHESS SERIES SCORE KEEPER</h3>
+          </div>
+          <div class="score-limit">
+            <span>Select Score Limit:</span>
+            <select name="score-select" id="score-select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="score-display">
+            <span class="player-display" id="playerOneDisplay">Player 1:</span>
+            <span class="player-display" id="playerTwoDisplay">Player 2:</span>
+          </div>
+
+          <div class="image">
+            <img
+              id="main-image"
+              src="/images/chessImage2.jpg"
+              alt="fancy image of a chess game"
+            />
+          </div>
         </div>
         <section class="content">
-          <div class="score-display">
-            <span id="playerOneDisplay">0</span>
-            <span id="to">to</span>
-            <span id="playerTwoDisplay">0</span>
-          </div>
-          <div class="score-limit">Score Limit:</div>
-        </section>
-        <section class="sub-content">
+            <div class="card-bottom-container">
           <div class="buttons-1">
             <button class="button" id="button-1">+1 Player 1</button>
             <button class="button" id="button-2">+1 Player 2</button>
             <button class="button" id="button-3">+0.5 Draw</button>
           </div>
+        </section>
+        <section class="sub-content">
           <div class="buttons-reset">
-            <button class="button" id="button-reset">Reset</button>
+            <button class="button" id="button-reset">Reset Series</button>
           </div>
         </section>
+        </div>
       </div>
     </div>
     <script src="/scripts/functions.js"></script>
