@@ -1,4 +1,5 @@
 // Button selectors
+const portfolioButton = document.querySelector(".return-button");
 const buttonOne = document.querySelector("#button-1");
 const buttonTwo = document.querySelector("#button-2");
 const buttonThree = document.querySelector("#button-3");
@@ -16,6 +17,10 @@ let playerOneScore = 0;
 let playerTwoScore = 0;
 let winningScore = 0;
 let isSeriesFinish = false;
+
+portfolioButton.addEventListener("click", () => {
+  window.location.replace("https://portfoliomax.netlify.app/");
+});
 
 scoreLimit.addEventListener("change", function () {
   winningScore = parseInt(this.value);
