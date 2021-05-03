@@ -1,2 +1,6 @@
 # chess-series-score-keeper
-https://chess-score-keeper-maxb-10.netlify.app/
+
+A simple app to track the scores of any 2 player game(but this one is in the style of a chess series) with an adjustable score limit.
+
+
+
